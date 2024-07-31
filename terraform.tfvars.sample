@@ -1,0 +1,17 @@
+# Signal Sciences (Fastly WAF) Corporation Name
+sigsci_corp = "the_corp_name"
+
+# Signal Sciences Site Name
+sigsci_site = "the_short_site_name"
+
+# User Email for Signal Sciences Authentication
+sigsci_email = "your_email"
+
+# Authentication Token for Signal Sciences API
+sigsci_auth_token = "your_api_keys"
+
+# Password for Signal Sciences (if needed, otherwise leave as an empty string)
+sigsci_password = ""
+
+# Fastly API Key (required for Edge Deployments functionality, if applicable)
+fastly_api_key = ""
