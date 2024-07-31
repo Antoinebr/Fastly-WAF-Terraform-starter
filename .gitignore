@@ -1,0 +1,47 @@
+# Local .terraform directories
+**/.terraform/*
+!.terraform/environment
+
+# Terraform state files
+*.tfstate
+*.tfstate.*
+
+# Crash log files
+crash.log
+
+# Ignore variables files (optional)
+*.tfvars
+*.tfvars.json
+
+# Ignore override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignore plugin binaries
+terraform-provider-*
+
+# Ignore workspace files
+.terraformrc
+terraform.rc
+
+# IDE specific files
+.vscode/
+.idea/
+
+# MacOS Finder metadata
+.DS_Store
+
+# Thumbnails
+Thumbs.db
+
+# Log files
+*.log
+
+# System files
+*.swp
+*~
+
+# SFTP config files (optional, if applicable)
+.sftp-config.json
