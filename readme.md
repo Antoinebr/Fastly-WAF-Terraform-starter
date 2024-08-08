@@ -1,15 +1,7 @@
 ## Getting Started with Terraform and the Fastly WAF 
 
 
-### Initialize Terraform
-
-Start by initializing Terraform:
-
-```bash
-terraform init
-```
-
-### Install Dependencies for the Provider
+## Install Dependencies for the Provider
 
 To use the Signal Sciences (Fastly WAF) provider, you need to have Go installed and build the provider. Follow the instructions in the [provider documentation](https://registry.terraform.io/providers/signalsciences/sigsci/latest/docs#requirements).
 
@@ -29,7 +21,11 @@ Export the environment variable for the Terraform CLI configuration. It may also
 export TF_CLI_CONFIG_FILE=/Users/antoine/Documents/code/playground/terraform-provider-sigsci/bin/developer_overrides.tfrc
 ```
 
-### Update `main.tf`
+### Create a `main.tf`
+
+```
+touch main.tf
+```
 
 In your `main.tf`, configure the provider as follows:
 
@@ -65,6 +61,17 @@ provider_installation {
 ```
 
 The `signalsciences/sigsci` reference is used in the `main.tf` file to link to the local provider.
+
+
+
+### Initialize Terraform
+
+Start by initializing Terraform:
+
+```bash
+terraform init
+```
+
 
 ### Terraform Commands
 
@@ -145,3 +152,6 @@ resource "sigsci_site_signal_tag" "loginpwdreset" {
 
 For more information and examples, refer to the [sigsci-terraform-examples](https://github.com/rickyaustin/sigsci-terraform-examples) repository.
 
+[This repo is also super usefull](https://github.com/fastly/security-use-cases/tree/main/gold-standard-starter)
+
+[Pro Tips: Next-Gen WAF Mastery](https://www.fastly.com/blog/10-pro-tips-for-getting-the-most-out-of-your-next-gen-waf/)
